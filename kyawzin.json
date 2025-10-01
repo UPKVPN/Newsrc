@@ -1,0 +1,25 @@
+{
+  "Version": "1.0.0",
+  "ReleaseNotes": "Initial clean config setup",
+  "Servers": [
+    {
+      "Name": "Demo-1",
+      "sInfo": "Tokyo, Japan",
+      "FLAG": "jp",
+      "SSHPort": "22",
+      "SSLPort": "443",
+      "Payload": "GET wss://demo.example.com/ HTTP/1.1\\r\\nHost: demo.example.com\\r\\n\\r\\n",
+      "SNI": "demo.example.com",
+      "Nameserver": "8.8.8.8",
+      "Slowdns": "dns.demo.example.com",
+      "udpserver": "1.2.3.4:7300",
+      "udpauth": "token",
+      "udpobfs": "obfs",
+      "udpbuffer": "4096",
+      "udpdown": "1024",
+      "udpup": "1024",
+      "apilatamsrcv2ray": "https://api.demo.example.com/v2ray",
+      "v2rayJson": "{ }"
+    }
+  ]
+}
